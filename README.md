@@ -1,0 +1,1 @@
+# staticpro.js
