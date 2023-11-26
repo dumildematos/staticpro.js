@@ -4,8 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "start": "npx webpack --mode development --watch",
     "test": "echo \"Error: no test specified\" && exit 1"
-  },
+  }, 
   "repository": {
     "type": "git",
     "url": "git+https://github.com/dumildematos/staticpro.js.git"
@@ -16,5 +17,10 @@
   "bugs": {
     "url": "https://github.com/dumildematos/staticpro.js/issues"
   },
-  "homepage": "https://github.com/dumildematos/staticpro.js#readme"
+  "homepage": "https://github.com/dumildematos/staticpro.js#readme",
+  "devDependencies": {
+    "webpack": "^5.89.0",
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^4.15.1"
+  }
 }
