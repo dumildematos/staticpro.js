@@ -63,9 +63,9 @@ StaticPro.js is a lightweight JavaScript library designed to bring the flexibili
 </html>
 ```
 
-# Contributing to [Your Project Name]
+# Contributing to StaticPro.js
 
-Thank you for considering contributing to our project! Your contributions help improve and grow the community. Before you start, please take a moment to read the following guidelines.
+Thank you for considering contributing to StaticPro.js! Your contributions help improve and grow the project. Before you start, please take a moment to read the following guidelines.
 
 ## Table of Contents
 - [Code of Conduct](#code-of-conduct)
@@ -94,7 +94,7 @@ If you find a bug, please open an issue with a detailed description of the probl
 
 ### Suggesting Enhancements
 
-Have an idea to make the project better? Great! Open an issue and describe your enhancement. We welcome your input!
+Have an idea to make StaticPro.js better? Great! Open an issue and describe your enhancement. We welcome your input!
 
 ### Code Contributions
 
@@ -109,12 +109,12 @@ We welcome code contributions! To contribute code:
 
 To get started with development, follow these steps:
 
-1. Clone the repository: `git clone [repository-url]`
-2. Install dependencies: `npm install` or `yarn install`
+1. Clone the repository: `git clone https://github.com/dumildematos/staticpro.js`
+2. Install dependencies: `npm install`
 
 ## Development Setup
 
-Explain any specific setup steps needed for development, such as environment variables, configuration files, etc.
+No specific setup steps are needed for development.
 
 ## Commit Guidelines
 
@@ -134,7 +134,7 @@ Update the documentation to reflect your changes. Documentation is just as impor
 
 ## Community
 
-Connect with the community:
+Connect with the StaticPro.js community:
 - Chat on [Gitter](#)
 - Follow us on [Twitter](#)
 - Join the [Forum](#)
