@@ -14,30 +14,35 @@ const staticpro: Staticpro = {
 
   directive: function (directives: DirectiveObject) {
     document.addEventListener('DOMContentLoaded', function () {
-      staticpro.originalDOM = document.cloneNode(true) as Document;
 
-      for (const key in directives) {
-        if (directives.hasOwnProperty(key)) {
-          const selector = key;
-          const implementation = directives[key] as DirectiveImplementation;
-
-          const elements = staticpro.queryOriginalDOM(`[${selector}]`);
-          elements.forEach(element => {
-            const value = element.getAttribute(selector);
-
-            // Explicitly convert the attribute value to a boolean
-            const booleanValue = value === 'true';
-
-            implementation(element as HTMLElement, booleanValue);
-          });
+      // Check if the 'Static' attribute is present on the body tag
+      
+      if (document.body.hasAttribute('Static')) {
+        staticpro.originalDOM = document.cloneNode(true) as Document;
+  
+        for (const key in directives) {
+          if (directives.hasOwnProperty(key)) {
+            const selector = key;
+            const implementation = directives[key] as DirectiveImplementation;
+  
+            const elements = staticpro.queryOriginalDOM(`[${selector}]`);
+            elements.forEach(element => {
+              const value = element.getAttribute(selector);
+  
+              // Explicitly convert the attribute value to a boolean
+              const booleanValue = value === 'true';
+  
+              implementation(element as HTMLElement, booleanValue);
+            });
+          }
         }
+  
+        // Update the actual DOM with the modified staticpro.originalDOM
+        document.documentElement.replaceWith(staticpro.originalDOM.documentElement.cloneNode(true));
+  
+        // Optionally, you can call staticpro.updateOriginalDOM() if you still want to keep a clone in memory
+        // staticpro.updateOriginalDOM();
       }
-
-      // Update the actual DOM with the modified staticpro.originalDOM
-      document.documentElement.replaceWith(staticpro.originalDOM.documentElement.cloneNode(true));
-
-      // Optionally, you can call staticpro.updateOriginalDOM() if you still want to keep a clone in memory
-      // staticpro.updateOriginalDOM();
     });
   },
 
