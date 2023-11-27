@@ -61,7 +61,7 @@ StaticPro.js is a lightweight JavaScript library designed to bring the flexibili
 
 </body>
 </html>
-
+```
 
 # Contributing to [Your Project Name]
 
