@@ -61,3 +61,86 @@ StaticPro.js is a lightweight JavaScript library designed to bring the flexibili
 
 </body>
 </html>
+
+
+# Contributing to [Your Project Name]
+
+Thank you for considering contributing to our project! Your contributions help improve and grow the community. Before you start, please take a moment to read the following guidelines.
+
+## Table of Contents
+- [Code of Conduct](#code-of-conduct)
+- [How Can I Contribute?](#how-can-i-contribute)
+  - [Reporting Bugs](#reporting-bugs)
+  - [Suggesting Enhancements](#suggesting-enhancements)
+  - [Code Contributions](#code-contributions)
+- [Getting Started](#getting-started)
+- [Development Setup](#development-setup)
+- [Commit Guidelines](#commit-guidelines)
+- [Code Style](#code-style)
+- [Testing](#testing)
+- [Documentation](#documentation)
+- [Community](#community)
+- [License](#license)
+
+## Code of Conduct
+
+Please review our [Code of Conduct](CODE_OF_CONDUCT.md) before contributing.
+
+## How Can I Contribute?
+
+### Reporting Bugs
+
+If you find a bug, please open an issue with a detailed description of the problem. Be sure to include information about your environment.
+
+### Suggesting Enhancements
+
+Have an idea to make the project better? Great! Open an issue and describe your enhancement. We welcome your input!
+
+### Code Contributions
+
+We welcome code contributions! To contribute code:
+
+1. Fork the repository.
+2. Create a new branch for your feature or bug fix.
+3. Make your changes and ensure the tests pass.
+4. Open a pull request.
+
+## Getting Started
+
+To get started with development, follow these steps:
+
+1. Clone the repository: `git clone [repository-url]`
+2. Install dependencies: `npm install` or `yarn install`
+
+## Development Setup
+
+Explain any specific setup steps needed for development, such as environment variables, configuration files, etc.
+
+## Commit Guidelines
+
+Follow the [conventional commits](https://www.conventionalcommits.org/) specification for your commit messages.
+
+## Code Style
+
+Maintain the existing code style. If in doubt, refer to the style guide or the existing codebase.
+
+## Testing
+
+Ensure that your changes pass the existing tests. If you add new functionality, include relevant tests.
+
+## Documentation
+
+Update the documentation to reflect your changes. Documentation is just as important as code!
+
+## Community
+
+Connect with the community:
+- Chat on [Gitter](#)
+- Follow us on [Twitter](#)
+- Join the [Forum](#)
+
+## License
+
+By contributing, you agree that your contributions will be licensed under the [LICENSE](LICENSE) file of this project.
+
+Happy contributing!
