@@ -8,7 +8,7 @@ StaticPro.js is a lightweight JavaScript library designed to bring the flexibili
   
 - **Attribute-Based Directives:** Easily transform HTML attributes into dynamic directives for enhanced functionality.
 
-- **If Directive:** Use the `@If` directive to conditionally show or hide elements based on a boolean attribute.
+- **If Directive:** Use the `If` directive to conditionally show or hide elements based on a boolean attribute.
 
 ## Getting Started
 
