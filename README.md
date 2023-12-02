@@ -63,7 +63,7 @@ To use data binding, call the `app` method and pass a function that takes a sing
   <script>
     staticpro.app(($var) => {
       // Define properties for data binding
-      $var.name = "Anna"; 
+      $var.name = "John"; 
       $var.age = 21;
     });
   </script>
@@ -71,7 +71,7 @@ To use data binding, call the `app` method and pass a function that takes a sing
   <p If="false">hide</p>
   <p If="true">show</p>
 
-  <p>{name} Silva</p> <!-- Anna Silva-->
+  <p>{name} Doe</p> <!-- John Doe-->
   <p>{age}</p> <!-- 21-->
 
 </body>
