@@ -4,13 +4,33 @@
 <head>
   <meta charset="UTF-8">
   <title>staticpro.js Example</title>
-  <script src="../dist/bundle.js"></script>
-
+  <script src="../dist/staticpro.bundle.js"></script>
+  <style>
+    body{
+      background: #302f2f;
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      color: #fff;
+      font-size: 20pt;
+    }
+  </style>
 </head>
 <body Static>
 
-  <p If="false">hide</p>
-  <p If="true">show</p>
+  <script>
+  staticpro.app(($var) => {
+
+    $var.name = "Anna"; 
+    $var.age = 21;
+
+  });
+</script>
+
+<p If="false">hide</p>
+<p If="true">show</p>
+
+<p>{name} Silva</p> <!-- Ana Silva-->
+
+<p>{age}</p> <!-- 21-->
 
 </body>
 </html>

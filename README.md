@@ -20,6 +20,7 @@ StaticPro.js is a lightweight JavaScript library designed to bring the flexibili
      ```html
      <script src="path/to/bundle.js"></script>
      ```
+
 2. **Initialize the Library:**
     - Add the `Static` attribute to the `<body>` tag to indicate that you want to use Staticpro.js:
 
@@ -41,6 +42,11 @@ StaticPro.js is a lightweight JavaScript library designed to bring the flexibili
 4. **Run your Application:**
    - Ensure your application is running, and the directives will be applied dynamically.
 
+## Data Binding
+
+To use data binding, call the `app` method and pass a function that takes a single argument, `$var`. This object allows you to define properties that will be dynamically bound to your HTML elements.
+
+### Data Binding Example
 ## Example
 
 ```html
@@ -54,10 +60,19 @@ StaticPro.js is a lightweight JavaScript library designed to bring the flexibili
 </head>
 <body Static>
 
-  <h1>Welcome to StaticPro.js</h1>
+  <script>
+    staticpro.app(($var) => {
+      // Define properties for data binding
+      $var.name = "Anna"; 
+      $var.age = 21;
+    });
+  </script>
 
-  <p If="true">This element will be displayed.</p>
-  <p If="false">This element will be hidden.</p>
+  <p If="false">hide</p>
+  <p If="true">show</p>
+
+  <p>{name} Silva</p> <!-- Anna Silva-->
+  <p>{age}</p> <!-- 21-->
 
 </body>
 </html>

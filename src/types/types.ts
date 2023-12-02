@@ -1,6 +1,8 @@
 // src/types.ts
-export type DirectiveImplementation = (element: HTMLElement, value: Boolean) => void;
+export abstract class DirectiveImplementation<T> {
+  abstract execute(element: HTMLElement, value: T): void;
+}
 
 export interface DirectiveObject {
-    [key: string]: DirectiveImplementation;
+  [key: string]: new () => DirectiveImplementation<any>;
 }
