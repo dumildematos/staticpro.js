@@ -1,3 +1,7 @@
+<div style="text-align:center;">
+  <img src="assets/staticpro.svg" alt="Project Logo" width="200" height="200">
+</div>
+
 # StaticPro.js
 
 StaticPro.js is a lightweight JavaScript library designed to bring the flexibility and ease of use found in SPA (Single Page Application) frameworks such as Angular, React, and Vue to the development of static web pages. It provides a simple and intuitive starting point for front-end developers, allowing them to harness the power of directives, binds, and HTTP calls in their static applications.
@@ -14,30 +18,29 @@ StaticPro.js is a lightweight JavaScript library designed to bring the flexibili
 
 1. **Include the Library:**
    - Download the `bundle.js` file from the latest release.
-
    - Include the following script tag in your HTML file:
 
-     ```html
-     <script src="path/to/bundle.js"></script>
-     ```
+```html
+<script src="path/to/bundle.js"></script>
+```
 
 2. **Initialize the Library:**
     - Add the `Static` attribute to the `<body>` tag to indicate that you want to use Staticpro.js:
 
-    ```html
-    <body Static>
-        <!-- Your static content goes here -->
-    </body>
-    ```
+```html
+<body Static>
+    <!-- Your static content goes here -->
+</body>
+```
 
 
 2. **Use Directives in HTML:**
    - Apply directives to your HTML elements using the specified syntax.
 
-     ```html
-     <p If="true">This will be displayed</p>
-     <p If="false">This will be hidden</p>
-     ```
+```html
+<p If="true">This will be displayed</p>
+<p If="false">This will be hidden</p>
+```
 
 4. **Run your Application:**
    - Ensure your application is running, and the directives will be applied dynamically.
