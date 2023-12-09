@@ -1,4 +1,4 @@
-<div style="text-align:center;">
+<div align="center">
   <img src="assets/staticpro.svg" alt="Project Logo" width="200" height="200">
 </div>
 
